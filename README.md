@@ -17,6 +17,7 @@ This repository contains a machine learning project aimed at predicting house pr
 - `notebooks/`: Contains the Jupyter notebook used for the workflow.
 - `data/`: Dataset files.
 - `README.md`: Project documentation.
+- `requirements.txt`: Necessary libraries for the project
 
 ## Data Description
 The dataset contains:
@@ -46,13 +47,7 @@ The dataset contains:
    - Note: Test metrics cannot be calculated as `y_test` is unavailable.
 
 ## Results
-| Model               | Validation RMSE | Validation \( R^2 \) |
-|---------------------|----------------|----------------------|
-| Lasso Regression    | 0.24           | 0.88                 |
-| Regression Tree     | 0.27           | 0.85                 |
-| XGBoost Regressor   | 0.21           | 0.91                 |
-
-XGBoost achieved the best validation performance among all the models.
+XGBoost achieved the best performance among the models. The performance of all three models can be further improved by finessing the data preprocessing and feature engineering parts. 
 
 ## Limitations
 - Metrics for the test set cannot be calculated as `y_test` was hidden for competition evaluation.
